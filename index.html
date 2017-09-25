@@ -6,31 +6,32 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null, 'Google', '*', 'https://encrypted.google.com', '/search?q={}', '#111'],
-      ['Work', 'Analytics', 'a', 'https://analytics.google.com', null, '#ff6d00'],
-      ['Work', 'GitHub', 'g', 'https://github.com', '/search?q={}', '#333'],
-      ['Work', 'Inbox', 'I', 'https://inbox.google.com', '/search/{}', '#4285f4'],
-      ['Work', 'Keep', 'k', 'https://keep.google.com', '/#search/text={}', '#fb0'],
-      ['Look', 'Codrops', 'C', 'https://tympanus.net/codrops', '?search-type=posts&s={}', '#0099cc'],
-      ['Look', 'Hunt', 'H', 'https://www.producthunt.com', '/search?q={}', '#da552f'],
-      ['Look', 'Photos', 'P', 'https://photos.google.com', '/search/{}', '#34a853'],
-      ['Look', 'Unsplash', 'u', 'https://unsplash.com/new', '/search/{}', '#000'],
-      ['Lurk', 'Facebook', 'f', 'https://www.facebook.com', '/search/top/?q={}', '#3b5998'],
-      ['Lurk', 'Instagram', 'i', 'https://www.instagram.com', null, '#833ab4'],
-      ['Lurk', 'Reddit', 'r', 'https://www.reddit.com', '/search?q={}', '#5f99cf'],
-      ['Lurk', 'Twitter', 't', 'https://twitter.com', '/search?q={}', '#1da1f2'],
-      ['Listen', 'Hypem', 'h', 'https://hypem.com/popular', '/search/{}', '#83c441'],
-      ['Listen', 'Line Radio', 'l', 'https://linerad.io', '/#{}', '#39CCCC'],
-      ['Listen', 'Pandora', 'p', 'https://www.pandora.com', '/artist/{}', '#005483'],
-      ['Listen', 'SoundCloud', 's', 'https://soundcloud.com/discover', '/search?q={}', '#ff8800'],
-      ['Watch', 'Academy', 'A', 'https://www.khanacademy.org/', '/search?page_search_query={}', '#9cb443'],
-      ['Watch', 'Netflix', 'n', 'https://www.netflix.com/browse', '/search?q={}', '#e50914'],
-      ['Watch', 'Twitch', 'T', 'https://www.twitch.tv/directory/following', null, '#6441a5'],
-      ['Watch', 'YouTube', 'y', 'https://youtube.com/feed/subscriptions', '/results?search_query={}', '#cd201f'],
-      ['Download', '7digital', '7', 'https://us.7digital.com', '/search?q={}', '#07606e'],
-      ['Download', 'Sky Torrents', 'S', 'https://skytorrents.in', '/search/all/ed/1?q={}', '#00d1b2'],
-      ['Download', 'Pirate Bay', 'b', 'https://thepiratebay.org', '/search/{}', '#4c4132'],
-      ['Download', 'YTS', 'Y', 'https://yts.gs/browse-movies/all/1080p/all/7/latest', '/browse-movies/{}', '#2f2f2f'],
+      [null,       'Google',         '*', 'https://encrypted.google.com',               '/search?q={}',             '#111'   ],
+
+      ['Work',     'Google Mail',    'm', 'https://mail.google.com/',                   '/mail/u/0/#search/{}',     '#4285f4'],
+      ['Work',     'Proton Mail',    'p', 'https://mail.protonmail.com/inbox',          null,                       '#988fc4'],
+      ['Work',     'GitHub',         'g', 'https://github.com',                         '/search?q={}',             '#333'   ],
+      ['Work',     'Keep',           'k', 'https://keep.google.com',                    '/#search/text={}',         '#fb0'   ],
+      ['Work',     'Calendar',       'c', 'https://calendar.google.com/calendar/render', null,                      '#f32'   ],
+      ['Work',     'Drive',          'd', 'https://drive.google.com/',                  '/drive/u/0/search?q={}',   '#f32'   ],
+
+      ['Look',     'Pocket',         'K', 'https://getpocket.com/a/queue/',             null,                       '#d31759'],
+      ['Look',     'Feedly',         'f', 'https://www.feedly.com/',                    null,                       '#833ab4'],
+      ['Look',     'IMDb',           'I', 'http://www.imdb.com/',                       '/find?q={}',               '#fb0'   ],
+      ['Look',     'Amazon',         'a', 'https://smile.amazon.com/',                  '/s/field-keywords={}',     '#fb0'   ],
+      ['Look',     'Steam',          'S', 'http://store.steampowered.com/',             '/search/?term={}',         '#000'   ],
+
+      ['Lurk',     'Reddit',         'r', 'https://www.reddit.com',                     '/search?q={}',             '#5f99cf'],
+      ['Lurk',     'Tumblr',         'm', 'http://www.tumblr.com/dashboard/',           '/search/{}',               '#100c54'],
+      ['Lurk',     'Twitter',        't', 'https://twitter.com',                        '/search?q={}',             '#1da1f2'],
+
+      ['Watch',    'Netflix',        'N', 'https://www.netflix.com/browse',             '/search?q={}',             '#e50914'],
+      ['Watch',    'Twitch',         'T', 'https://www.twitch.tv/directory/following',  null,                       '#6441a5'],
+      ['Watch',    'YouTube',        'y', 'https://youtube.com/feed/subscriptions',     '/results?search_query={}', '#cd201f'],
+
+      ['Download', 'rutorrent',      'R', 'http://localhost:10660/rutorrent/',          null,                       '#00d1b2'],
+      ['Download', 'PassThePopcorn', 'P', 'https://passthepopcorn.me/',                 '/torrents.php?order_by=relevance&searchstr={}', '#4c4132'],
+      ['Download', 'baconBits',      'B', 'https://baconbits.org/',                     '/torrents.php?searchstr={}', '#00d1b2'],
     ],
 
     // give suggestions as you type
