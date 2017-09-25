@@ -6,32 +6,32 @@
     // the category, name, key, url, search path and color for your commands
     // if none of the specified keys are matched, the '*' key is used
     commands: [
-      [null,       'Google',         '*', 'https://encrypted.google.com',               '/search?q={}',             '#111'   ],
+      [null,   'Google',             '*', 'https://encrypted.google.com','/search?q={}',               '#111'   ],
 
-      ['Work',     'Google Mail',    'm', 'https://mail.google.com/',                   '/mail/u/0/#search/{}',     '#4285f4'],
-      ['Work',     'Proton Mail',    'p', 'https://mail.protonmail.com/inbox',          null,                       '#988fc4'],
-      ['Work',     'GitHub',         'g', 'https://github.com',                         '/search?q={}',             '#333'   ],
-      ['Work',     'Keep',           'k', 'https://keep.google.com',                    '/#search/text={}',         '#fb0'   ],
-      ['Work',     'Calendar',       'c', 'https://calendar.google.com/calendar/render', null,                      '#f32'   ],
-      ['Work',     'Drive',          'd', 'https://drive.google.com/',                  '/drive/u/0/search?q={}',   '#f32'   ],
+      ['Work', 'Google Mail',        'm', 'https://mail.google.com/', '/mail/u/0/#search/{}',          '#4285f4'],
+      ['Work', 'Proton Mail',        'p', 'https://mail.protonmail.com/inbox',  null,                  '#988fc4'],
+      ['Work', 'GitHub',             'g', 'https://github.com', '/search?q={}',                        '#333'   ],
+      ['Work', 'Keep',               'k', 'https://keep.google.com', '/#search/text={}',               '#fb0'   ],
+      ['Work', 'Calendar',           'c', 'https://calendar.google.com/calendar/render', null,         '#f32'   ],
+      ['Work', 'Drive',              'd', 'https://drive.google.com/', '/drive/u/0/search?q={}',       '#f32'   ],
 
-      ['Look',     'Pocket',         'K', 'https://getpocket.com/a/queue/',             null,                       '#d31759'],
-      ['Look',     'Feedly',         'f', 'https://www.feedly.com/',                    null,                       '#833ab4'],
-      ['Look',     'IMDb',           'I', 'http://www.imdb.com/',                       '/find?q={}',               '#fb0'   ],
-      ['Look',     'Amazon',         'a', 'https://smile.amazon.com/',                  '/s/field-keywords={}',     '#fb0'   ],
-      ['Look',     'Steam',          'S', 'http://store.steampowered.com/',             '/search/?term={}',         '#000'   ],
+      ['Look', 'Pocket',             'K', 'https://getpocket.com/a/queue/', null,                      '#d31759'],
+      ['Look', 'Feedly',             'f', 'https://www.feedly.com/',  null,                            '#833ab4'],
+      ['Look', 'IMDb',               'I', 'http://www.imdb.com/', '/find?q={}',                        '#fb0'   ],
+      ['Look', 'Amazon',             'a', 'https://smile.amazon.com/', '/s/field-keywords={}',         '#fb0'   ],
+      ['Look', 'Steam',              'S', 'http://store.steampowered.com/', '/search/?term={}',        '#000'   ],
 
-      ['Lurk',     'Reddit',         'r', 'https://www.reddit.com',                     '/search?q={}',             '#5f99cf'],
-      ['Lurk',     'Tumblr',         'm', 'http://www.tumblr.com/dashboard/',           '/search/{}',               '#100c54'],
-      ['Lurk',     'Twitter',        't', 'https://twitter.com',                        '/search?q={}',             '#1da1f2'],
+      ['Lurk', 'Reddit',             'r', 'https://www.reddit.com', '/search?q={}',                    '#5f99cf'],
+      ['Lurk', 'Tumblr',             'm', 'http://www.tumblr.com/dashboard/', '/search/{}',            '#100c54'],
+      ['Lurk', 'Twitter',            't', 'https://twitter.com', '/search?q={}',                       '#1da1f2'],
 
-      ['Watch',    'Netflix',        'N', 'https://www.netflix.com/browse',             '/search?q={}',             '#e50914'],
-      ['Watch',    'Twitch',         'T', 'https://www.twitch.tv/directory/following',  null,                       '#6441a5'],
-      ['Watch',    'YouTube',        'y', 'https://youtube.com/feed/subscriptions',     '/results?search_query={}', '#cd201f'],
+      ['Watch', 'Netflix',           'N', 'https://www.netflix.com/browse', '/search?q={}',            '#e50914'],
+      ['Watch', 'Twitch',            'T', 'https://www.twitch.tv/directory/following', null,           '#6441a5'],
+      ['Watch', 'YouTube',           'y', 'https://youtube.com/', '/results?search_query={}',          '#cd201f'],
 
-      ['Download', 'rutorrent',      'R', 'http://localhost:10660/rutorrent/',          null,                       '#00d1b2'],
-      ['Download', 'PassThePopcorn', 'P', 'https://passthepopcorn.me/',                 '/torrents.php?order_by=relevance&searchstr={}', '#4c4132'],
-      ['Download', 'baconBits',      'B', 'https://baconbits.org/',                     '/torrents.php?searchstr={}', '#00d1b2'],
+      ['Download', 'rutorrent',      'R', 'http://localhost:10660/rutorrent/', null,                   '#00d1b2'],
+      ['Download', 'PassThePopcorn', 'P', 'https://passthepopcorn.me/', '/torrents.php?searchstr={}',  '#4c4132'],
+      ['Download', 'baconBits',      'B', 'https://baconbits.org/', '/torrents.php?searchstr={}',      '#00d1b2'],
     ],
 
     // give suggestions as you type
@@ -45,25 +45,16 @@
     // "DuckDuckGo" suggestions come from the duck duck go search api
     // "History" suggestions come from your previously entered queries
     influencers: [
-      { name: 'Default', limit: 5 },
       { name: 'History', limit: 2 },
       { name: 'DuckDuckGo', limit: 5 },
     ],
-
-    // default search suggestions for the specified queries
-    defaultSuggestions: {
-      'g': ['g/issues', 'g/pulls', 'gist.github.com', 'g/cadejscroggins', 'g/cadejscroggins/tilde'],
-      'l': ['l:electronic', 'l:chill', 'l:focus', 'l:sleep', 'l:ambient'],
-      'r': ['r/r/unixporn', 'r/r/startpages', 'r/r/webdev', 'r/r/technology', 'r/r/portland'],
-      's': ['s/you/likes', 's/discover/the-upload'],
-    },
 
     // instantly redirect when a key is matched
     // put a space before any other queries to prevent unwanted redirects
     instantRedirect: false,
 
     // open queries in a new tab
-    newTab: true,
+    newTab: false,
 
     // dynamic background colors when command domains are matched
     colors: true,
