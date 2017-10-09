@@ -345,12 +345,18 @@
 
 <form class="overlay center" id="search-form" autocomplete="off" spellcheck="false">
   <div>
-    <input id="search-input" type="text">
+    <input id="search-input" type="text" autofocus>
     <ul id="search-suggestions"></ul>
   </div>
 </form>
 
 <aside class="overlay center" id="help"></aside>
+
+<script>
+  window.onload = function() {
+    document.getElementById("search-input").focus();
+  };
+</script>
 
 <script>
   const $ = {
